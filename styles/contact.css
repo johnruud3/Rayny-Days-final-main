@@ -1,0 +1,348 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding-top: 100px;
+  font-family: "Poppins", sans-serif;
+  color: rgba(10, 54, 65, 1);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: rgba(10, 54, 65, 1);
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 100;
+  box-shadow: 0px 6px 7px 4px rgba(0, 0, 0, 0.75);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  position: fixed;
+  width: 100%;
+}
+
+.header-left {
+  display: flex;
+  width: 150px;
+}
+
+.Header-logo {
+  height: 60px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+  .Header-logo {
+    height: 40px;
+  }
+}
+
+.header-mid-buttons {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+}
+
+.hamburger-menu {
+  display: flex;
+  width: 100%;
+}
+
+@media only screen and (max-width: 799px) {
+  .hamburger-menu {
+    display: none;
+  }
+}
+
+.home-button,
+.about-button,
+.contact-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.hamburger-home,
+.hamburger-about,
+.hamburger-contact {
+  text-decoration: none;
+  color: rgba(10, 54, 65, 1);
+}
+
+.header-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .header-right {
+    display: none;
+  }
+}
+
+.search-bar {
+  border: none;
+  border-radius: 20px;
+  height: 20px;
+  padding: 10px 10px 10px 5px;
+}
+
+.search-button {
+  display: flex;
+  position: relative;
+  border: none;
+  border-radius: 30px;
+}
+
+.search-icon {
+  width: 20px;
+  position: absolute;
+  right: 7px;
+  top: -9px;
+  cursor: pointer;
+}
+
+.cart {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.currency {
+  padding-right: 20px;
+  margin: auto;
+}
+
+.norge-flagg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.form-container form label,
+.form-container form input,
+.form-container form select,
+.form-container form textarea {
+  display: block;
+  text-align: center;
+  justify-self: center;
+  width: 25%;
+  height: 30px;
+  margin-top: 10px;
+}
+
+.form-container form select {
+  cursor: pointer;
+}
+
+.form-container form textarea {
+  width: 40%;
+  height: 340px;
+  text-align: left;
+}
+
+.button-container {
+  margin-bottom: 15%;
+  text-align: center;
+  margin-top: 5%;
+}
+
+.button-continue {
+  background-color: rgba(10, 54, 65, 1);
+  padding: 1%;
+  border: none;
+  border-radius: 1%;
+  top: 800px;
+  font-size: 100%;
+  width: 290px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .button-continue {
+    top: 300px;
+    width: 150px;
+  }
+
+  .form-container form label,
+  .form-container form input,
+  .form-container form select,
+  .form-container form textarea {
+    font-size: 13px;
+    width: 40%;
+  }
+
+  .form-container form textarea {
+    width: 60%;
+    height: 150px;
+  }
+}
+
+.button-continue:hover {
+  background: rgb(180, 180, 180);
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  margin-top: 8%;
+  border: none;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  box-shadow: inset 0px 6px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.footer-left {
+  padding: 1%;
+  max-width: 15%;
+}
+
+.footer-logo {
+  width: 50%;
+  cursor: pointer;
+}
+
+.footer-middle {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  font-family: "Poppins", sans-serif;
+  font-weight: 550;
+  font-style: normal;
+  font-size: 110%;
+  color: rgba(10, 54, 65, 1);
+}
+
+@media only screen and (max-width: 950px) {
+  .footer-middle {
+    font-size: 60%;
+    justify-content: space-between;
+    margin-right: 20%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .footer-middle {
+    font-size: 40%;
+    justify-content: space-between;
+  }
+}
+
+.footer-home,
+.footer-about,
+.footer-contact {
+  color: rgba(10, 54, 65, 1);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(10, 54, 65, 1);
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+  .footer-right {
+    justify-content: right;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 40%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .footer-right {
+    justify-content: right;
+  }
+}
+
+.facebook,
+.twitter,
+.instagram {
+  width: 20%;
+}
+
+@media only screen and (max-width: 950px) {
+  .facebook,
+  .twitter,
+  .instagram {
+    width: 15%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .facebook,
+  .twitter,
+  .instagram {
+    width: 10%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .facebook,
+  .twitter,
+  .instagram {
+    width: 8%;
+  }
+}
+
+.facebook-pic,
+.instagram-pic,
+.twitter-pic {
+  width: 100%;
+  cursor: pointer;
+}
+
+.hamburger-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+  .hamburger-icon {
+    display: block;
+    margin-left: auto;
+    padding-right: 1rem;
+  }
+
+  .hamburger-menu {
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+  }
+
+  .hamburger-menu.show {
+    display: flex;
+  }
+
+  .header-mid-buttons {
+    padding: 0.5rem 1rem;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .header-right {
+    display: none;
+  }
+}

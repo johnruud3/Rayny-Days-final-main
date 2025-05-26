@@ -1,0 +1,711 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 100;
+    box-shadow: 0px 6px 7px 4px rgba(0, 0, 0, 0.75);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: fixed;
+    width: 100%;
+}
+
+.header-left {
+    display: flex;
+    width: 150px;
+}
+
+.Header-logo {
+    height: 60px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+    .Header-logo {
+        height: 40px;
+    }
+}
+
+.header-mid-buttons {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+}
+
+.hamburger-menu {
+    display: flex;
+    width: 100%;
+}
+
+@media only screen and (max-width: 799px) {
+    .hamburger-menu {
+        display: none;
+    }
+}
+
+.home-button,
+.about-button,
+.contact-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: rgba(10, 54, 65, 1);
+}
+
+.header-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.search-bar {
+    border: none;
+    border-radius: 20px;
+    height: 20px;
+}
+
+.search-button {
+    display: flex;
+    position: relative;
+    border: none;
+    border-radius: 30px;
+}
+
+.search-icon {
+    width: 20px;
+    position: absolute;
+    right: 7px;
+    top: -9px;
+    cursor: pointer;
+}
+
+.cart {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.currency {
+    padding-right: 20px;
+    margin: auto;
+}
+
+.norge-flagg {
+    width: 2rem;
+    height: 2rem;
+}
+
+.header-picture {
+    position: relative;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.forest {
+    width: 100%;
+}
+
+.weather {
+    text-align: center;
+}
+
+.weather-pic {
+    width: 70%;
+}
+
+.jacket-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media only screen and (max-width: 500px) {
+    .jacket-grid {
+        display: none;
+    }
+}
+
+.jacket-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: auto;
+}
+
+.jacket-information {
+    display: flex;
+    flex-direction: column;
+}
+
+.jacket1-pic {
+    width: 100%;
+    height: 45rem;
+    max-height: 700px;
+    object-fit: contain;
+}
+
+@media only screen and (max-width: 1700px) {
+    .jacket1-pic {
+        height: 30rem;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .jacket1-pic {
+        height: 20rem;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .jacket1-pic {
+        height: 10rem;
+    }
+}
+
+.image-wrapper {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+.checkout-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.jacket-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 200%;
+    color: rgba(10, 54, 65, 1);
+}
+
+@media only screen and (max-width: 1420px) {
+    .jacket-info {
+        font-size: 170%;
+    }
+}
+
+@media only screen and (max-width: 1201px) {
+    .jacket-info {
+        font-size: 160%;
+    }
+}
+
+@media only screen and (max-width: 1135px) {
+    .jacket-info {
+        font-size: 130%;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .jacket-info {
+        font-size: 100%;
+    }
+}
+
+@media only screen and (max-width: 715px) {
+    .jacket-info {
+        font-size: 90%;
+    }
+}
+
+.cost {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 150%;
+    color: rgba(10, 54, 65, 1);
+}
+
+@media only screen and (max-width: 640px) {
+    .cost {
+        font-size: 100%;
+    }
+}
+
+.checkout-top-pic {
+    text-align: center;
+    width: 37%;
+    cursor: pointer;
+}
+
+.checkout1-pic {
+    text-align: center;
+    width: 70%;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+    .checkout1-pic {
+    display: grid;
+    text-align: center;
+    width: 80%;
+    cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .checkout1-pic {
+    display: grid;
+    text-align: center;
+    width: 35%;
+    cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .checkout1-pic {
+    display: grid;
+    text-align: center;
+    width: 48%;
+    cursor: pointer;
+    }
+}
+
+.boxreview-grid {
+    display: grid;
+    z-index: 10;
+    position: absolute;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 190px;
+    margin: 0 auto;
+   justify-content: space-between;
+}
+
+@media only screen and (max-width: 1400px) {
+    .boxreview-grid {
+        grid-gap: 90px;
+    }
+}
+
+.review-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media only screen and (max-width: 900px) {
+    .review-container {
+        display: none;
+    }
+}
+
+.review-pic {
+    width: 100%;
+    box-shadow: 0px 6px 7px 4px rgba(0, 0, 0, 0.75);
+    z-index: 5;
+    object-fit: cover;
+}
+
+.customer-reviews {
+    color: rgba(10, 54, 65, 1);
+    font-size: 300%;
+}
+
+.reviewbox1-headertext {
+    font-weight: 600;
+    position: absolute;
+    color: white;
+    top: 20px;
+    left: 20px;
+}
+
+.reviewbox1-bodytext {
+    font-weight: 200;
+    position: absolute;
+    color: white;
+    top: 105px;
+    left: 20px;
+    width: 20%;
+}
+
+.reviewbox {
+    background-color: rgba(10, 54, 65, 1);
+    opacity: 70%;
+    width: 25rem;
+    height: 15rem;
+}
+
+@media only screen and (max-width: 1700px) {
+    .reviewbox {
+        width: 19rem;
+        height: 14rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .reviewbox {
+        width: 14rem;
+        height: 12rem;
+    }
+}
+
+.Jackets-header {
+    font-family: "Poppins", sans-serif;
+    color: rgba(10, 54, 65, 1);
+    text-align: center;
+    font-size: 300%;
+}
+
+@media only screen and (max-width: 640px) {
+    .Jackets-header {
+        font-size: 200%;
+    }
+}
+
+.jacket-grid2 {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 5%;
+    padding: 5%;
+}
+
+@media only screen and (max-width: 640px) {
+    .jacket-grid2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.jacket-container2 {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.newsletter {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    text-align: center;
+}
+
+.newsletter-box {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 60rem;
+    background-color: rgba(10, 54, 65, 1);
+    align-items: center;
+}
+
+.newsletter-header-text {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 350%;
+    padding-top: 5%;
+}
+
+@media only screen and (max-width: 600px) {
+    .newsletter-header-text {
+    font-size: 190%;
+    }
+}
+
+.newsletter-line {
+    height: 1px;
+    background-color: white;
+    width: 50%;
+    margin: 5%;
+    margin-top: 5%;
+}
+
+.newsletter-info {
+    font-weight: 300;
+    font-size: 250%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .newsletter-info {
+    font-size: 140%;
+    }
+}
+
+.subtitle-box {
+    width: 40%;
+    height: 15%;
+    border: none;
+    text-align: center;
+}
+
+@media only screen and (max-width: 400px) {
+    .subtitle-box {
+    margin-bottom: 5%;
+    margin-top: 20%;
+    width: 60%;
+    }
+}
+
+.newsletter-subtitle {
+    font-weight: 100;
+    font-size: 120%;
+    margin-top: 2%;
+}
+
+@media only screen and (max-width: 600px) {
+    .newsletter-subtitle {
+    font-size: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .newsletter-subtitle {
+    font-size: 90%;
+    }
+}
+
+.newsletter-searchbar-wrapping {
+    display: flex;
+    text-align: center;
+    width: 30%;
+    height: 7%;
+}
+
+@media only screen and (max-width: 950px) {
+    .newsletter-searchbar-wrapping {
+        width: 37%;
+        height: 4%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .newsletter-searchbar-wrapping {
+        width: 60%;
+        height: 4%;
+    }
+}
+
+.search-bar2 {
+    border: none;
+    border-radius: 21px;
+    height: 100%;
+    width: 100%;
+    font-size: 200%;
+    padding: 10px 10px 10px 20px;
+    box-shadow: inset 10px 7px 5px rgba(0, 0, 0, 0.3),  inset -2px -2px 5px rgba(255, 255, 255, 0.8);
+}
+
+@media only screen and (max-width: 1100px) {
+    .search-bar2 {
+        font-size: 100%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .search-bar2 {
+        font-size: 90%;
+    }
+}
+
+
+.email {
+    align-self: flex-start;
+    margin-left: 36%;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 650px) {
+    .email {
+        align-self: auto;
+        margin-left: 0%;
+    }
+}
+
+.sign-up-box {
+    display: flex;
+    margin-top: 1%;
+    width: 14%;
+    height: 7%;
+    margin-left: 16%;
+    border-radius: 21px;
+    background-color: white;
+    z-index: 20;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 950px) {
+    .sign-up-box {
+        width: 20%;
+        height: 7%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .sign-up-box {
+        width: 30%;
+        height: 5%;
+        margin-left: 0%;
+        margin-top: 3%;
+    }
+}
+
+.sign-up-box:hover {
+    background: rgb(180, 180, 180);
+    border: 3px solid #000;
+}
+
+.sign-up-text {
+    color: rgba(10, 54, 65, 1);
+    font-weight: 500;
+    font-size: 200%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .sign-up-text {
+    font-size: 150%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .sign-up-text {
+    font-size: 120%;
+    }
+}
+
+
+.footer {
+    display: flex;
+    border: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: inset 0px 6px 5px 0px rgba(0,0,0,0.75);
+}
+
+.footer-left {
+    padding: 1%;
+    max-width: 15%;
+}
+
+.footer-logo {
+    width: 50%;
+    cursor: pointer;
+}
+
+.footer-middle {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    font-family: "Poppins", sans-serif;
+    font-weight: 550;
+    font-style: normal;
+    font-size: 110%;
+    color: rgba(10, 54, 65, 1);
+}
+
+@media only screen and (max-width: 950px) {
+    .footer-middle {
+    font-size: 60%;
+    justify-content: space-between;
+    margin-right: 20%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .footer-middle {
+    font-size: 40%;
+    justify-content: space-between;
+    }
+}
+
+.footer-home, .footer-about, .footer-contact {
+    color: rgba(10, 54, 65, 1);
+    cursor: pointer;
+}
+
+.footer-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(10, 54, 65, 1);
+}
+
+@media only screen and (max-width: 700px) {
+    .footer-right {
+        justify-content: right;
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: 40%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .footer-right {
+        justify-content: right;
+    }
+}
+
+.facebook, .twitter, .instagram {
+    width: 20%; 
+}
+
+@media only screen and (max-width: 950px) {
+    .facebook, .twitter, .instagram {
+        width: 15%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .facebook, .twitter, .instagram {
+        width: 10%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .facebook, .twitter, .instagram {
+        width: 8%;
+    }
+}
+
+.facebook-pic, .instagram-pic, .twitter-pic {
+    width: 100%;
+    cursor: pointer;
+}
+
