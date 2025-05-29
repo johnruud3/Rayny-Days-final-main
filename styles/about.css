@@ -41,12 +41,6 @@ body {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 800px) {
-  .Header-logo {
-    height: 40px;
-  }
-}
-
 .header-mid-buttons {
   display: flex;
   flex: 1;
@@ -56,12 +50,6 @@ body {
 .hamburger-menu {
   display: flex;
   width: 100%;
-}
-
-@media only screen and (max-width: 799px) {
-  .hamburger-menu {
-    display: none;
-  }
 }
 
 .home-button,
@@ -89,6 +77,14 @@ body {
 @media only screen and (max-width: 800px) {
   .header-right {
     display: none;
+  }
+
+    .hamburger-menu {
+    display: none;
+  }
+
+    .Header-logo {
+    height: 40px;
   }
 }
 
@@ -218,13 +214,6 @@ body {
   }
 }
 
-@media only screen and (max-width: 400px) {
-  .footer-middle {
-    font-size: 40%;
-    justify-content: space-between;
-  }
-}
-
 .footer-home,
 .footer-about,
 .footer-contact {
@@ -248,11 +237,28 @@ body {
     flex-shrink: 1;
     flex-basis: 40%;
   }
+
+  .facebook,
+  .twitter,
+  .instagram {
+    width: 10%;
+  }
 }
 
 @media only screen and (max-width: 400px) {
   .footer-right {
     justify-content: right;
+  }
+
+  .facebook,
+  .twitter,
+  .instagram {
+    width: 8%;
+  }
+
+    .footer-middle {
+    font-size: 40%;
+    justify-content: space-between;
   }
 }
 
@@ -267,22 +273,6 @@ body {
   .twitter,
   .instagram {
     width: 15%;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  .facebook,
-  .twitter,
-  .instagram {
-    width: 10%;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .facebook,
-  .twitter,
-  .instagram {
-    width: 8%;
   }
 }
 

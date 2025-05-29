@@ -39,6 +39,14 @@ body {
   .Header-logo {
     height: 40px;
   }
+
+   .hamburger-menu {
+    display: none;
+  }
+
+    .header-right {
+    display: none;
+  }
 }
 
 .header-mid-buttons {
@@ -50,12 +58,6 @@ body {
 .hamburger-menu {
   display: flex;
   width: 100%;
-}
-
-@media only screen and (max-width: 799px) {
-  .hamburger-menu {
-    display: none;
-  }
 }
 
 .home-button,
@@ -82,11 +84,7 @@ body {
   margin-right: 1rem;
 }
 
-@media only screen and (max-width: 800px) {
-  .header-right {
-    display: none;
-  }
-}
+
 
 .search-bar {
   border: none;
@@ -150,6 +148,14 @@ main {
     grid-template-rows: 1fr;
     grid-template-columns: none;
   }
+
+    .header-body-text {
+    font-size: 1.5rem;
+  }
+
+    .color-text {
+    font-size: 1rem;
+  }
 }
 
 .jacket-wrapper {
@@ -171,22 +177,10 @@ main {
   font-weight: 510;
 }
 
-@media only screen and (max-width: 850px) {
-  .header-body-text {
-    font-size: 1.5rem;
-  }
-}
-
 .color-text {
   text-align: center;
   font-weight: 410;
   padding-top: 2%;
-}
-
-@media only screen and (max-width: 850px) {
-  .color-text {
-    font-size: 1rem;
-  }
 }
 
 .medium-size-box {
@@ -256,6 +250,16 @@ main {
     font-size: 40%;
     justify-content: space-between;
   }
+
+    .footer-right {
+    justify-content: right;
+  }
+
+    .facebook,
+  .twitter,
+  .instagram {
+    width: 8%;
+  }
 }
 
 .footer-home,
@@ -281,13 +285,14 @@ main {
     flex-shrink: 1;
     flex-basis: 40%;
   }
-}
 
-@media only screen and (max-width: 400px) {
-  .footer-right {
-    justify-content: right;
+    .facebook,
+  .twitter,
+  .instagram {
+    width: 10%;
   }
 }
+
 
 .facebook,
 .twitter,
@@ -300,22 +305,6 @@ main {
   .twitter,
   .instagram {
     width: 15%;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-  .facebook,
-  .twitter,
-  .instagram {
-    width: 10%;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .facebook,
-  .twitter,
-  .instagram {
-    width: 8%;
   }
 }
 
@@ -379,16 +368,18 @@ main {
   label {
     font-size: 0.7rem;
   }
+
+    .billinginfo-text {
+    font-size: 1rem;
+  }
+
+    input[type="text"] {
+    height: 20px;
+  }
 }
 
 .billinginfo-text {
   padding: 5%;
-}
-
-@media only screen and (max-width: 850px) {
-  .billinginfo-text {
-    font-size: 1rem;
-  }
 }
 
 .rest {
@@ -424,10 +415,4 @@ button[type="submit"]:hover {
 
 input[type="text"] {
   height: 30px;
-}
-
-@media only screen and (max-width: 850px) {
-  input[type="text"] {
-    height: 20px;
-  }
 }

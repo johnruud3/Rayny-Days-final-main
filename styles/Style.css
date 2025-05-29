@@ -34,6 +34,10 @@
     .Header-logo {
         height: 40px;
     }
+
+        .hamburger-menu {
+        display: none;
+    }
 }
 
 .header-mid-buttons {
@@ -45,12 +49,6 @@
 .hamburger-menu {
     display: flex;
     width: 100%;
-}
-
-@media only screen and (max-width: 799px) {
-    .hamburger-menu {
-        display: none;
-    }
 }
 
 .home-button,
@@ -249,6 +247,13 @@ main {
     .cost {
         font-size: 100%;
     }
+
+    .checkout1-pic {
+    display: grid;
+    text-align: center;
+    width: 35%;
+    cursor: pointer;
+    }
 }
 
 .checkout-top-pic {
@@ -270,14 +275,9 @@ main {
     width: 80%;
     cursor: pointer;
     }
-}
 
-@media only screen and (max-width: 640px) {
-    .checkout1-pic {
-    display: grid;
-    text-align: center;
-    width: 35%;
-    cursor: pointer;
+    .review-container {
+    display: none;
     }
 }
 
@@ -316,12 +316,6 @@ main {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-}
-
-@media only screen and (max-width: 900px) {
-    .review-container {
-        display: none;
-    }
 }
 
 .review-pic {
@@ -385,6 +379,13 @@ main {
     .Jackets-header {
         font-size: 200%;
     }
+
+    .jacket-grid2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    }
 }
 
 .jacket-grid2 {
@@ -394,15 +395,6 @@ main {
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 5%;
     padding: 5%;
-}
-
-@media only screen and (max-width: 640px) {
-    .jacket-grid2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
 }
 
 .jacket-container2 {
@@ -443,6 +435,18 @@ main {
     .newsletter-header-text {
     font-size: 190%;
     }
+
+    .newsletter-info {
+    font-size: 140%;
+    }
+
+    .newsletter-subtitle {
+    font-size: 100%;
+    }
+
+    .newsletter-subtitle {
+    font-size: 90%;
+    }
 }
 
 .newsletter-line {
@@ -457,12 +461,6 @@ main {
     font-weight: 300;
     font-size: 250%;
     text-align: center;
-}
-
-@media only screen and (max-width: 600px) {
-    .newsletter-info {
-    font-size: 140%;
-    }
 }
 
 .subtitle-box {
@@ -486,18 +484,6 @@ main {
     margin-top: 2%;
 }
 
-@media only screen and (max-width: 600px) {
-    .newsletter-subtitle {
-    font-size: 100%;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .newsletter-subtitle {
-    font-size: 90%;
-    }
-}
-
 .newsletter-searchbar-wrapping {
     display: flex;
     text-align: center;
@@ -509,6 +495,21 @@ main {
     .newsletter-searchbar-wrapping {
         width: 37%;
         height: 4%;
+    }
+
+    .sign-up-box {
+    width: 20%;
+    height: 7%;
+    }
+
+    .footer-middle {
+    font-size: 60%;
+    justify-content: space-between;
+    margin-right: 20%;
+    }
+
+    .facebook, .twitter, .instagram {
+    width: 15%;
     }
 }
 
@@ -539,6 +540,13 @@ main {
     .search-bar2 {
         font-size: 90%;
     }
+
+    .sign-up-box {
+    width: 30%;
+    height: 5%;
+    margin-left: 0%;
+    margin-top: 3%;
+    }
 }
 
 
@@ -567,22 +575,6 @@ main {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-}
-
-@media only screen and (max-width: 950px) {
-    .sign-up-box {
-        width: 20%;
-        height: 7%;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .sign-up-box {
-        width: 30%;
-        height: 5%;
-        margin-left: 0%;
-        margin-top: 3%;
-    }
 }
 
 .sign-up-box:hover {
@@ -640,18 +632,18 @@ main {
     color: rgba(10, 54, 65, 1);
 }
 
-@media only screen and (max-width: 950px) {
-    .footer-middle {
-    font-size: 60%;
-    justify-content: space-between;
-    margin-right: 20%;
-    }
-}
-
 @media only screen and (max-width: 400px) {
     .footer-middle {
     font-size: 40%;
     justify-content: space-between;
+    }
+
+    .footer-right {
+    justify-content: right;
+    }
+
+    .facebook, .twitter, .instagram {
+    width: 8%;
     }
 }
 
@@ -674,34 +666,14 @@ main {
         flex-shrink: 1;
         flex-basis: 40%;
     }
-}
 
-@media only screen and (max-width: 400px) {
-    .footer-right {
-        justify-content: right;
+    .facebook, .twitter, .instagram {
+    width: 10%;
     }
 }
 
 .facebook, .twitter, .instagram {
     width: 20%; 
-}
-
-@media only screen and (max-width: 950px) {
-    .facebook, .twitter, .instagram {
-        width: 15%;
-    }
-}
-
-@media only screen and (max-width: 700px) {
-    .facebook, .twitter, .instagram {
-        width: 10%;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    .facebook, .twitter, .instagram {
-        width: 8%;
-    }
 }
 
 .facebook-pic, .instagram-pic, .twitter-pic {
