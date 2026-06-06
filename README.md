@@ -12,12 +12,12 @@ An e-commerce storefront for outdoor clothing, built as a static website.
 
 ## Pages
 
-- `headerpage.html` — Homepage
-- `productsite1.html` – `productsite7.html` — Individual product pages
-- `about.html` — About page
-- `Contact.html` — Contact page
-- `checkout-page.html` — Checkout page
-- `checkout-Succes.html` — Order confirmation page
+- `headerpage.html` - Homepage
+- `productsite1.html` - `productsite7.html` — Individual product pages
+- `about.html` - About page
+- `Contact.html` - Contact page
+- `checkout-page.html` - Checkout page
+- `checkout-Succes.html` - Order confirmation page
 
 ## Getting Started
 
